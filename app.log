@@ -1,0 +1,95 @@
+2022-11-09 20:12:33.041  INFO 1467 --- [restartedMain] cl.infoclub.fsj.PrimerSpringApplication  : Starting PrimerSpringApplication using Java 1.8.0_291 on MacBook-Pro-de-Felipe.local with PID 1467 (/Users/kessi/Documents/workspace-spring-tool-suite-4-4.9.0.RELEASE/PrimerSpring/target/classes started by kessi in /Users/kessi/Documents/workspace-spring-tool-suite-4-4.9.0.RELEASE/PrimerSpring)
+2022-11-09 20:12:33.047  INFO 1467 --- [restartedMain] cl.infoclub.fsj.PrimerSpringApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-11-09 20:12:33.159  INFO 1467 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-09 20:12:33.161  INFO 1467 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-09 20:12:33.911  INFO 1467 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-11-09 20:12:33.913  INFO 1467 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-11-09 20:12:33.924  INFO 1467 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JDBC repository interfaces.
+2022-11-09 20:12:33.933  INFO 1467 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-11-09 20:12:33.934  INFO 1467 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-09 20:12:33.939  INFO 1467 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2022-11-09 20:12:35.065  INFO 1467 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-09 20:12:35.078  INFO 1467 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-09 20:12:35.078  INFO 1467 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-09 20:12:35.166  INFO 1467 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-09 20:12:35.167  INFO 1467 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2005 ms
+2022-11-09 20:12:35.252  WARN 1467 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2022-11-09 20:12:35.256  INFO 1467 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-11-09 20:12:35.282  INFO 1467 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-11-09 20:12:35.303 ERROR 1467 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2022-11-09 20:16:25.909  INFO 1501 --- [restartedMain] cl.infoclub.fsj.PrimerSpringApplication  : Starting PrimerSpringApplication using Java 1.8.0_291 on MacBook-Pro-de-Felipe.local with PID 1501 (/Users/kessi/Documents/workspace-spring-tool-suite-4-4.9.0.RELEASE/PrimerSpring/target/classes started by kessi in /Users/kessi/Documents/workspace-spring-tool-suite-4-4.9.0.RELEASE/PrimerSpring)
+2022-11-09 20:16:25.910  INFO 1501 --- [restartedMain] cl.infoclub.fsj.PrimerSpringApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-11-09 20:16:25.960  INFO 1501 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-09 20:16:25.961  INFO 1501 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-09 20:16:27.003  INFO 1501 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-09 20:16:27.012  INFO 1501 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-09 20:16:27.013  INFO 1501 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-09 20:16:27.066  INFO 1501 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-09 20:16:27.066  INFO 1501 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1105 ms
+2022-11-09 20:16:27.292 DEBUG 1501 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-11-09 20:16:27.381 DEBUG 1501 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2022-11-09 20:16:27.398 DEBUG 1501 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-11-09 20:16:27.416 DEBUG 1501 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-11-09 20:16:27.533  INFO 1501 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-09 20:16:27.571  INFO 1501 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-09 20:16:27.592  INFO 1501 --- [restartedMain] cl.infoclub.fsj.PrimerSpringApplication  : Started PrimerSpringApplication in 2.141 seconds (JVM running for 3.118)
+2022-11-09 20:16:34.571  INFO 1501 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-09 20:16:34.571  INFO 1501 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-09 20:16:34.572 DEBUG 1501 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-11-09 20:16:34.572 DEBUG 1501 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-11-09 20:16:34.572 DEBUG 1501 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-11-09 20:16:34.573 DEBUG 1501 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7455d721
+2022-11-09 20:16:34.578 DEBUG 1501 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@429a5f1a
+2022-11-09 20:16:34.578 DEBUG 1501 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-11-09 20:16:34.578  INFO 1501 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2022-11-09 20:16:34.704 DEBUG 1501 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2022-11-09 20:16:34.714 DEBUG 1501 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to cl.infoclub.fsj.controller.HomeController#Main(Model)
+2022-11-09 20:16:34.743 DEBUG 1501 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8]
+2022-11-09 20:16:36.792 DEBUG 1501 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-09 20:16:36.898 DEBUG 1501 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/apple-touch-icon-precomposed.png", parameters={}
+2022-11-09 20:16:36.922 DEBUG 1501 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-09 20:16:36.934 DEBUG 1501 --- [http-nio-8080-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2022-11-09 20:16:36.935 DEBUG 1501 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2022-11-09 20:16:36.946 DEBUG 1501 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2022-11-09 20:16:36.948 DEBUG 1501 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-11-09 20:16:36.979 DEBUG 1501 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-09 20:16:36.980 DEBUG 1501 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Nov 09 20:16:36 CLST 2022, status=404, error=Not Found, message=No message available, (truncated)...]
+2022-11-09 20:16:37.040 DEBUG 1501 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2022-11-09 20:16:37.050 DEBUG 1501 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/apple-touch-icon.png", parameters={}
+2022-11-09 20:16:37.051 DEBUG 1501 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-09 20:16:37.054 DEBUG 1501 --- [http-nio-8080-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2022-11-09 20:16:37.054 DEBUG 1501 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2022-11-09 20:16:37.055 DEBUG 1501 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2022-11-09 20:16:37.056 DEBUG 1501 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-11-09 20:16:37.058 DEBUG 1501 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-09 20:16:37.060 DEBUG 1501 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Nov 09 20:16:37 CLST 2022, status=404, error=Not Found, message=No message available, (truncated)...]
+2022-11-09 20:16:37.067 DEBUG 1501 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2022-11-09 20:16:37.162 DEBUG 1501 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2022-11-09 20:16:37.164 DEBUG 1501 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-11-09 20:16:37.166 DEBUG 1501 --- [http-nio-8080-exec-4] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2022-11-09 20:16:37.166 DEBUG 1501 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2022-11-09 20:16:37.167 DEBUG 1501 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2022-11-09 20:16:37.167 DEBUG 1501 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-11-09 20:16:37.170 DEBUG 1501 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-09 20:16:37.171 DEBUG 1501 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Nov 09 20:16:37 CLST 2022, status=404, error=Not Found, message=No message available, (truncated)...]
+2022-11-09 20:16:37.198 DEBUG 1501 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
